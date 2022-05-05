@@ -40,11 +40,11 @@ if (empty($name)) {
   print('ВОЗРАСТ ВВЕДИТЕ!!!.<br/>');
   $errors = TRUE;
 }
-  if (!isset($pol)) {
+  if (empty($pol)) {
   print('Так ты М или Ж?.<br/>');
   $errors = TRUE;
 }
-  if (!isset($limb)) {
+  if (empty($limb)) {
   print('Назовите количество конечностей.<br/>');
   $errors = TRUE;
 }
@@ -52,7 +52,7 @@ if (empty($name)) {
   print('Расскажите о себе.<br/>');
   $errors = TRUE;
 }
-  if (!isset($super)) {
+  if (empty($super)) {
   print('Правда нет способностей?.<br/>');
   $errors = TRUE;
 }
