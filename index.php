@@ -28,7 +28,7 @@ else
     $bio = $_POST['bio'];
     $super= $_POST['super'];
     $errors = FALSE;
-if (empty($_POST['fio'])) {
+if (empty($name)) {
   print('Заполните имя.<br/>');
   $errors = TRUE;
 }
