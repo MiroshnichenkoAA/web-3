@@ -32,6 +32,31 @@ if (empty($name)) {
   print('Заполните имя.<br/>');
   $errors = TRUE;
 }
+  if (empty($email)) {
+  print('Введите почту.<br/>');
+  $errors = TRUE;
+}
+  if (empty($year)) {
+  print('ВОЗРАСТ ВВЕДИТЕ!!!.<br/>');
+  $errors = TRUE;
+}
+  if (!isset($pol)) {
+  print('Так ты М или Ж?.<br/>');
+  $errors = TRUE;
+}
+  if (!isset($limb)) {
+  print('Назовите количество конечностей.<br/>');
+  $errors = TRUE;
+}
+   if (empty($bio)) {
+  print('Расскажите о себе.<br/>');
+  $errors = TRUE;
+}
+  if (!isset($super)) {
+  print('Правда нет способностей?.<br/>');
+  $errors = TRUE;
+}
+
 
 // *************
 // Тут необходимо проверить правильность заполнения всех остальных полей.
