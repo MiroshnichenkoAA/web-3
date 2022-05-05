@@ -1,43 +1,43 @@
  <body>
    <div id="form">
-	<h1>Форма контракта</h1>
+	<h1>Р¤РѕСЂРјР° РєРѕРЅС‚СЂР°РєС‚Р°</h1>
 
 	<form action="index.php" method="POST">
 
 	  <label>
-		Имя:<br />
+		РРјСЏ:<br />
 		<input type="text" name="name"
 		  />
 	  </label><br />
 
 	  <label>
-		Еmail:<br />
+		Р•mail:<br />
 		<input name="email"
 		  placeholder="test@example.com"
 		  type="email" />
 	  </label><br />
 
 	  <label>
-		Год рождения:<br />
+		Р“РѕРґ СЂРѕР¶РґРµРЅРёСЏ:<br />
 		<select name="year">
-	  <option value="Выбрать">Выбрать</option>
+	  <option value="Р’С‹Р±СЂР°С‚СЊ">Р’С‹Р±СЂР°С‚СЊ</option>
 	<?php
 		for($i=1900;$i<=2022;$i++){
-		  printf("<option value=%d>%d год</option>",$i,$i);
+		  printf("<option value=%d>%d РіРѕРґ</option>",$i,$i);
 		}
 	?>
 	</select> <br>
 	  </label><br />
 	  
-	  Пол:<br />
+	  РџРѕР»:<br />
 	  <label><input type="radio" 
 		name="pol" value="M" />
-		Мужской</label>
+		РњСѓР¶СЃРєРѕР№</label>
 	  <label><input type="radio"
 		name="pol" value="W" />
-		Женский</label><br />
+		Р–РµРЅСЃРєРёР№</label><br />
 		
-	  Количество конечностей:<br />
+	  РљРѕР»РёС‡РµСЃС‚РІРѕ РєРѕРЅРµС‡РЅРѕСЃС‚РµР№:<br />
 	  <label><input type="radio"
 		name="limb" value="0" />
 		0</label>
@@ -55,26 +55,26 @@
 		4</label><br />
 		
 	  <label>
-		Сверхспособности:
+		РЎРІРµСЂС…СЃРїРѕСЃРѕР±РЅРѕСЃС‚Рё:
 		<br />
 		<select name="super[]"
 		  multiple="multiple">
-		  <option value="immortal">Бессмертие</option>
-		  <option value="megabrain" >Мегамозг</option>
-		  <option value="teleport">Телепортация</option>
+		  <option value="immortal">Р‘РµСЃСЃРјРµСЂС‚РёРµ</option>
+		  <option value="megabrain" >РњРµРіР°РјРѕР·Рі</option>
+		  <option value="teleport">РўРµР»РµРїРѕСЂС‚Р°С†РёСЏ</option>
 		</select>
 	  </label><br />
 	  
 	  <label>
-		Биография:<br />
+		Р‘РёРѕРіСЂР°С„РёСЏ:<br />
 		<textarea name="bio">Write something</textarea>
 	  </label><br />
 
-	  Чекбокс:<br />
+	  Р§РµРєР±РѕРєСЃ:<br />
 	  <label><input type="checkbox" name="checkbox"/>
-		Я Не болею за Red Bull Racing</label><br />
+		РЇ РќРµ Р±РѕР»РµСЋ Р·Р° Red Bull Racing</label><br />
 
-	  Если уверенны в своем ответе нажимайте:
+	  Р•СЃР»Рё СѓРІРµСЂРµРЅРЅС‹ РІ СЃРІРѕРµРј РѕС‚РІРµС‚Рµ РЅР°Р¶РёРјР°Р№С‚Рµ:
 	  <input type="submit" value="Send" />
 	</form>
 	   
